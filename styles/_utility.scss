@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+$textcolor : #038C33;
+$link: #010202;
+$primary_col: #00923F;
+
+
+
+header {
+    nav {
+        #topnav {
+            margin-top: 20px;
+
+            .contact-nav {
+                color: $textcolor;
+            }
+
+            .phone {
+                padding-right: 70px;
+            }
+
+            .email_nav a {
+                color: $link;
+                text-decoration: none;
+            }
+
+            .member-nav {
+                .register a {
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 5px 10px;
+                    background-color: #038C33;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+            a:hover {
+                color: $textcolor !important;
+            }
+        }
+    
+
+    .btm-nav {
+        background-color: $link;
+        margin-top: 60px;
+        img{
+            width: 100px;
+            height: auto;
+            padding: 20px;
+        }
+
+        .lists {
+            margin-right: 100px;
+        }
+    }
+
+    .button {
+        background-color: #ADD9BD !important;
+        margin-left: 15px;
+    }
+
+    .button:hover {
+        background-color: $textcolor !important;
+    }
+}

@@ -1,0 +1,36 @@
+@import "utility";
+
+
+.head-area {
+    background-image: url('../images/thisisengineering-raeng-TXxiFuQLBKQ-unsplashfgjkl\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 1440px;
+    height: 568px;
+    left: 0px;
+    margin-top: 110px;
+
+    .header {
+        padding-top: 170px;
+    }
+
+    .head-link {
+        color: #8FBF26 !important;
+        text-decoration: none;
+    }
+
+    .null {
+        background-image: url('../images/Rectangle\ 11.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        // width: 1440px;
+        height: 77px;
+        left: 0px;
+        top: 500px;
+        backdrop-filter: blur(33px);
+    }
+}
