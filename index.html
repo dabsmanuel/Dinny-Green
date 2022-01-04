@@ -7,93 +7,210 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css"/>
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>dinny green</title>
 </head>
 <body>
-    <header>
-        <section>
-            <nav class="navbar navbar-expand-md navbar-default top-nav" id="topnav">
-                <div class="container">
-                    <div class="top_nav d-flex flex-row bd-highlight">
-                        <div class="contact-nav d-flex flex-row bd-highlight">
-                            <div class="phone">
-                                <p><span class="fw-bold">Call: </span> +234 8102032321</p>
-                            </div>
-                            <div class="email_nav">
-                                <p><span class="fw-bold"> Support:</span> <a href="#"> info@yourcompany.com</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-nav d-flex align-items-center">
-                        <div class="login">
-                            <a href="#" class="fw-bold text-success log text-decoration-none m-2">Log in</a>
-                        </div>
-                        <div class="register">
-                            <a href="#" class="btn btn-success">Register</a>
-                        </div>
-                    </div>
-                </div>
-            </nav> 
-
-            <nav class="navbar fixed-top navbar-expand-sm btm-nav" id="btmnav">
-                <div class="container d-flex">
-                    <div class="one">
-                        <a class="navbar-brand lists" href="javascript:void(0)">
-                        <img src="./images/Group 61.png" alt="logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="javascript:void(0)">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="javascript:void(0)">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="javascript:void(0)">Services</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link text-white" href="javascript:void(0)">Instructors</a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <button class="btn text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Courses
-                                    </button>
-                                    <ul class="dropdown-menu bg-success text-white bb-1" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                    </ul>
+    <div class="wrapper">
+        <header>
+            <section>
+                <nav class="navbar navbar-expand-md navbar-default top-nav" id="topnav">
+                    <div class="container">
+                        <div class="top_nav d-flex flex-row bd-highlight">
+                            <div class="contact-nav d-flex flex-row bd-highlight justify-content-between">
+                                <div class="phone">
+                                    <p class="text-success"><span class="fw-bold">Call:</span> +234 8102032321</p>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="javascript:void(0)">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link btn btn-success text-white" href="javascript:void(0)">Contact</button>
-                            </li>
-                        </ul>
+                                <div class="email_nav">
+                                    <p class="text-success ml-5"><span class="fw-bold">Support:</span><a href="#" class="text-success ml-5"> info@yourcompany.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-nav d-flex align-items-center">
+                            <div class="login">
+                                <a href="#" class="fw-bold text-success log text-decoration-none m-2">Log in</a>
+                            </div>
+                            <div class="register">
+                                <a href="#" class="btn btnn btn-success">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav> 
+
+                <nav class="navbar fixed-top navbar-expand-md btm-nav" id="btmnav">
+                    <div class="container d-flex" id="custom-nav-container">
+                        <div class="one">
+                            <a class="navbar-brand lists" href="javascript:void(0)">
+                            <img src="./images/Group 61.png" alt="logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#custom-mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="custom-mynavbar">
+                            <ul class="navbar-nav"  id="custom-navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="javascript:void(0)">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="javascript:void(0)">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link text-white" href="javascript:void(0)">Instructors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <button class="btn text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Courses
+                                        </button>
+                                        <ul class="dropdown-menu bg-success text-white bb-1" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="javascript:void(0)">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link btn btnn btn-success text-white" href="javascript:void(0)">Contact</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+            <section class="container-fluid head-area">
+                <div class="header container">
+                    <h1 class="fw-bolder text-success">Give Your Child <br>A chance To Be Unique</h1>
+                    <p class="text-col">Experts agree that a child's personality doesn't fully form <br>until they are in elementary school. <br><a href="#" class="head-link">Sign in</a> to enroll yor child</p>
+                    <button class="btn btnn btn-success">sign up</button>
+                    <button class="btn btnn button">Learn more</button>
+                </div>
+                <div class="null container-fluid"></div>
+            </section>
+        </header>
+
+        <section id="about">    
+            <div class="rome m-5">
+                <div class="rome-container d-flex flex-row">
+                    <div class="girl p-2 ">
+                        <img src="./images/frame 3.png" alt="">
+                    </div>
+                    <div class="textbody">
+                        <h2 class="text-success fw-bolder">Advance Learning System Around The World</h2>
+                        <p class="text-success">We have made a collaborative effort in bringing together scientific expertise from other countries, steered jointly by their governments on the basis of shared, policy-driven interests.</p>
+
+                        <div class="text_area d-flex flex-row">
+                            <div class="text">
+                                <h2 class="text-success fw-bolder">25k<span>+</span></h2>
+                                <p class="text-success">Teachers</p>
+                            </div>
+                            <div class="text-img px-5">
+                                <img src="./images/Line 2.png" alt="border">
+                            </div>
+                            
+                            <div class="text">
+                                <h2 class="text-success fw-bolder">74k<span>+</span></h2>
+                                <p class="text-success">Active Courses</p>
+                            </div>
+
+                            <div class="text-img">
+                                <img src="./images/Line 2.png" alt="border">
+                            </div>
+
+                            <div class="textt">
+                                <h2 class="text-success fw-bolder">250</h2>
+                                <p class="text-success">Extra Curricular</p>
+                            </div>
+                        </div>
+                        <button class="btn btnn mt-3 btn-success">Learn More</button>
+                    </div>
+                    <div class="pics-contain">
+                        <div class="pics">
+                            <img src="./images/Mask Group (1).png" alt="brand">
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </section>
-
-        <section class="container-fluid head-area">
-            <div class="header container">
-                <h1 class="fw-bolder text-success">Give Your Child <br>A chance To Be Unique</h1>
-                <p class="text-success">Experts agree that a child's personality doesn't fully form <br>until they are in elementary school. <br><a href="#" class="head-link">Sign in</a> to enroll yor child</p>
-                <button class="btn btn-success">sign up</button>
-                <button class="btn button">Learn more</button>
             </div>
-            <div class="null container-fluid"></div>
         </section>
 
-    </header>
+        <section id="feature">
+            <div class="container-fluid">
+                <div class="text-items p-5 text-white text-center">
+                    <h1>Our Features</h1>
+                    <p>Dinny Green International School is nurtured in grace and truth, raising green,<br> flourishing and successful children</p>
+                </div>
+                <div class="container ">
+                    <div class="row row-2">
+                        <div class="col d-flex flex-row bg-light m-3 rounded">
+                            <div class="cycle-photo p-4">
+                                <img src="./images/Ellipse 24.png" alt="cycle">
+                            </div>
+                            <div class="words p-4">
+                                <p class="text-success">Awesome Teachers</p>
+                                <p class="text-col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem laborum quasi nulla minima unde inventore.</p>
+                            </div>
+                        </div>
+
+                        <div class="col d-flex flex-row bg-light m-3 rounded">
+                            <div class="cycle-photo p-5">
+                                <img src="./images/Ellipse 24.png" alt="cycle">
+                            </div>
+                            <div class="words p-4">
+                                <p class="text-success">Global Recognition</p>
+                                <p class="text-col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem laborum quasi nulla minima unde inventore.</p>
+                            </div>
+                        </div>
+
+                        <div class="col d-flex flex-row bg-light m-3 rounded">
+                            <div class="cycle-photo p-4">
+                                <img src="./images/Ellipse 24.png" alt="cycle">
+                            </div>
+                            <div class="words p-4">
+                                <p class="text-success">Extra curricular activities</p>
+                                <p class="text-col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem laborum quasi nulla minima unde inventore.</p>
+                            </div>
+                        </div>
+
+                        <div class="col d-flex flex-row bg-light m-3 rounded">
+                            <div class="cycle-photo p-4">
+                                <img src="./images/Ellipse 24.png" alt="cycle">
+                            </div>
+                            <div class="words p-4">
+                                <p class="text-success">Government Approved</p>
+                                <p class="text-col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem laborum quasi nulla minima unde inventore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <div class="body-type d-flex flex-row">
+                    <div class="text-type">
+                        <h1>Find Out More About Our Learning Experience</h1>
+                        <p>We have built hospitals, arranged doctor appointments have the diagnose and treat Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p><i class="fas fa-check-circle text-success"></i>  Culture in diversity</p>
+                        <p><i class="fas fa-check-circle text-success"></i>  We have built hospitals, arranged doctor.</p>
+                        <p><i class="fas fa-check-circle text-success"></i>  We have built hospitals, arranged doctor.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

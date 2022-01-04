@@ -10,7 +10,7 @@
     width: 1440px;
     height: 568px;
     left: 0px;
-    margin-top: 110px;
+    margin-top: 80px;
 
     .header {
         padding-top: 170px;
@@ -32,5 +32,67 @@
         left: 0px;
         top: 500px;
         backdrop-filter: blur(33px);
+    }
+}
+
+#about {
+    display: flex;
+    margin-top: 110px;
+    margin-bottom: 50px;
+
+    .container {
+        .rome {
+            margin-top: 110px !important;
+
+            .rome-container {
+
+                .girl {
+
+                    img {
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+
+                h2 {
+                    font-weight: 900 !important;
+
+                    span {
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.textbody {
+    padding: 0 90px ;
+}
+
+.pics {
+    padding-left: 20px !important;
+    position: relative;
+    left: 48px;
+    top: 80px;
+}
+
+// .text {
+//     border-right: 1px solid #D6D6D6;
+//     padding: 0 30px;
+// }
+
+.textt {
+    padding: 0 30px;
+}
+
+#feature {
+    background-image: url('../images/Frame\ 4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+        margin-top: -50px;
     }
 }

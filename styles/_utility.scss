@@ -2,22 +2,24 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 
 $textcolor : #038C33;
 $link: #010202;
 $primary_col: #00923F;
-
-
+$nav_col : #003412;
+$pcolor : #1F6036;
 
 header {
     nav {
-        #topnav {
+        .top-nav {
             margin-top: 20px;
 
             .contact-nav {
                 color: $textcolor;
+                margin-right: 20px !important;
             }
 
             .phone {
@@ -40,24 +42,38 @@ header {
             }
         }
 
-            a:hover {
-                color: $textcolor !important;
-            }
+        a:hover {
+            color: $textcolor !important;
         }
-    
+    }
+
 
     .btm-nav {
-        background-color: $link;
+        background-color: $nav_col;
         margin-top: 60px;
-        img{
-            width: 100px;
+        display: flex !important;
+        justify-content: space-between;
+
+        img {
+            width: 80px;
             height: auto;
-            padding: 20px;
+            flex: 0.2 !important;
         }
 
         .lists {
             margin-right: 100px;
+            flex: 0.3 !important;
         }
+    }
+
+    @mixin button {
+        background: $textcolor !important;
+        padding: 8px 22px !important;
+        color: #fff;
+    }
+
+    .btnn {
+        @include button;
     }
 
     .button {
@@ -67,5 +83,14 @@ header {
 
     .button:hover {
         background-color: $textcolor !important;
+        color: #fff;
+    }
+
+    .text-success {
+        color: $textcolor !important;
+    }
+
+    .text-col {
+        color: $pcolor;
     }
 }

@@ -1,22 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap");
 * {
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-header nav #topnav {
+header nav .top-nav {
   margin-top: 20px;
 }
-header nav #topnav .contact-nav {
+header nav .top-nav .contact-nav {
   color: #038C33;
+  margin-right: 20px !important;
 }
-header nav #topnav .phone {
+header nav .top-nav .phone {
   padding-right: 70px;
 }
-header nav #topnav .email_nav a {
+header nav .top-nav .email_nav a {
   color: #010202;
   text-decoration: none;
 }
-header nav #topnav .member-nav .register a {
+header nav .top-nav .member-nav .register a {
   color: #fff;
   text-decoration: none;
   padding: 5px 10px;
@@ -27,16 +29,24 @@ header nav a:hover {
   color: #038C33 !important;
 }
 header .btm-nav {
-  background-color: #010202;
+  background-color: #003412;
   margin-top: 60px;
+  display: flex !important;
+  justify-content: space-between;
 }
 header .btm-nav img {
-  width: 100px;
+  width: 80px;
   height: auto;
-  padding: 20px;
+  flex: 0.2 !important;
 }
 header .btm-nav .lists {
   margin-right: 100px;
+  flex: 0.3 !important;
+}
+header .btnn {
+  background: #038C33 !important;
+  padding: 8px 22px !important;
+  color: #fff;
 }
 header .button {
   background-color: #ADD9BD !important;
@@ -44,6 +54,13 @@ header .button {
 }
 header .button:hover {
   background-color: #038C33 !important;
+  color: #fff;
+}
+header .text-success {
+  color: #038C33 !important;
+}
+header .text-col {
+  color: #1F6036;
 }
 
 .head-area {
@@ -55,7 +72,7 @@ header .button:hover {
   width: 1440px;
   height: 568px;
   left: 0px;
-  margin-top: 110px;
+  margin-top: 80px;
 }
 .head-area .header {
   padding-top: 170px;
@@ -75,4 +92,48 @@ header .button:hover {
   top: 500px;
   -webkit-backdrop-filter: blur(33px);
           backdrop-filter: blur(33px);
+}
+
+#about {
+  display: flex;
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+#about .container .rome {
+  margin-top: 110px !important;
+}
+#about .container .rome .rome-container .girl img {
+  width: 20px;
+  height: auto;
+}
+#about .container .rome .rome-container h2 {
+  font-weight: 900 !important;
+}
+#about .container .rome .rome-container h2 span {
+  font-size: 20px !important;
+}
+
+.textbody {
+  padding: 0 90px;
+}
+
+.pics {
+  padding-left: 20px !important;
+  position: relative;
+  left: 48px;
+  top: 80px;
+}
+
+.textt {
+  padding: 0 30px;
+}
+
+#feature {
+  background-image: url("../images/Frame 4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#feature .row {
+  margin-top: -50px;
 }/*# sourceMappingURL=main.css.map */
