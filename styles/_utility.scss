@@ -1,96 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
 
 * {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-
+// variables
 $textcolor : #038C33;
 $link: #010202;
 $primary_col: #00923F;
 $nav_col : #003412;
 $pcolor : #1F6036;
 
-header {
-    nav {
-        .top-nav {
-            margin-top: 20px;
-
-            .contact-nav {
-                color: $textcolor;
-                margin-right: 20px !important;
-            }
-
-            .phone {
-                padding-right: 70px;
-            }
-
-            .email_nav a {
-                color: $link;
-                text-decoration: none;
-            }
-
-            .member-nav {
-                .register a {
-                    color: #fff;
-                    text-decoration: none;
-                    padding: 5px 10px;
-                    background-color: #038C33;
-                    border-radius: 5px;
-                }
-            }
-        }
-
-        a:hover {
-            color: $textcolor !important;
-        }
-    }
 
 
-    .btm-nav {
-        background-color: $nav_col;
-        margin-top: 60px;
-        display: flex !important;
-        justify-content: space-between;
+// Utilities
+.top-a,
+.top-nav {
+    color: $nav_col !important;
+    font-size: 14px !important;
+}
 
-        img {
-            width: 80px;
-            height: auto;
-            flex: 0.2 !important;
-        }
+@mixin button {
+    background: $textcolor !important;
+    padding: 10px 25px !important;
+    color: #fff;
+}
 
-        .lists {
-            margin-right: 100px;
-            flex: 0.3 !important;
-        }
-    }
+.btnn {
+    @include button;
+}
 
-    @mixin button {
-        background: $textcolor !important;
-        padding: 8px 22px !important;
-        color: #fff;
-    }
+.btnn:hover {
+    color: #fff !important;
+    background-color: $pcolor !important;
+}
 
-    .btnn {
-        @include button;
-    }
+.bad {
+    color: $textcolor !important;
+}
 
-    .button {
-        background-color: #ADD9BD !important;
-        margin-left: 15px;
-    }
+.badder {
+    color: $pcolor !important;
+}
 
-    .button:hover {
-        background-color: $textcolor !important;
-        color: #fff;
-    }
-
-    .text-success {
-        color: $textcolor !important;
-    }
-
-    .text-col {
-        color: $pcolor;
-    }
+.buts {
+    background-color: #ADD9BD !important;
+    margin-left: 10px;
+    padding: 5px 10px !important;
+    color: $textcolor;
 }

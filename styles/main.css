@@ -1,32 +1,59 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Poppins:wght@300&display=swap");
 * {
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+}
+
+.top-a,
+.top-nav {
+  color: #003412 !important;
+  font-size: 14px !important;
+}
+
+.btnn {
+  background: #038C33 !important;
+  padding: 10px 25px !important;
+  color: #fff;
+}
+
+.btnn:hover {
+  color: #fff !important;
+  background-color: #1F6036 !important;
+}
+
+.bad {
+  color: #038C33 !important;
+}
+
+.badder {
+  color: #1F6036 !important;
+}
+
+.buts {
+  background-color: #ADD9BD !important;
+  margin-left: 10px;
+  padding: 5px 10px !important;
+  color: #038C33;
 }
 
 header nav .top-nav {
   margin-top: 20px;
 }
 header nav .top-nav .contact-nav {
-  color: #038C33;
-  margin-right: 20px !important;
+  color: #003412;
 }
 header nav .top-nav .phone {
   padding-right: 70px;
 }
 header nav .top-nav .email_nav a {
   color: #010202;
-  text-decoration: none;
-}
-header nav .top-nav .member-nav .register a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 10px;
-  background-color: #038C33;
-  border-radius: 5px;
+  text-decoration: none !important;
 }
 header nav a:hover {
-  color: #038C33 !important;
+  color: #00923F !important;
+  font-size: 16.3px !important;
 }
 header .btm-nav {
   background-color: #003412;
@@ -41,16 +68,11 @@ header .btm-nav img {
 }
 header .btm-nav .lists {
   margin-right: 100px;
-  flex: 0.3 !important;
-}
-header .btnn {
-  background: #038C33 !important;
-  padding: 8px 22px !important;
-  color: #fff;
 }
 header .button {
   background-color: #ADD9BD !important;
   margin-left: 15px;
+  padding: 10px 25px !important;
 }
 header .button:hover {
   background-color: #038C33 !important;
@@ -62,26 +84,25 @@ header .text-success {
 header .text-col {
   color: #1F6036;
 }
-
-.head-area {
+header .head-area {
   background-image: url("../images/thisisengineering-raeng-TXxiFuQLBKQ-unsplashfgjkl 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 1440px;
+  width: 1347.5px;
   height: 568px;
   left: 0px;
   margin-top: 80px;
 }
-.head-area .header {
+header .head-area .header {
   padding-top: 170px;
 }
-.head-area .head-link {
+header .head-area .head-link {
   color: #8FBF26 !important;
   text-decoration: none;
 }
-.head-area .null {
+header .head-area .null {
   background-image: url("../images/Rectangle 11.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -134,6 +155,148 @@ header .text-col {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#feature .row {
-  margin-top: -50px;
+
+#services .service {
+  margin-top: 150px;
+  margin-left: 150px;
+}
+#services img {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  top: 55px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-left-radius: 50px;
+}
+
+#courses {
+  margin-top: 70px;
+  background-color: #F9FCFE;
+}
+#courses .park,
+#courses .icon {
+  padding: 50px;
+}
+#courses .park,
+#courses .central,
+#courses .badder {
+  width: auto;
+  margin: auto;
+  text-align: center;
+}
+#courses .icon {
+  position: relative;
+  left: 0px;
+}
+#courses .card img {
+  width: 200px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-items: center;
+}
+#courses .cards {
+  font-size: 12px;
+}
+#courses .eclipse > img:hover {
+  opacity: 0.6;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+#courses .bt {
+  border-top: 1px solid #038C33 !important;
+  border-bottom: 3px solid #038C33 !important;
+  color: #038C33 !important;
+  font-weight: bold;
+}
+#courses .bt:hover {
+  border-top: 1px solid #1F6036 !important;
+  border-bottom: 3px solid #1F6036 !important;
+  color: #1F6036 !important;
+  font-weight: bold;
+}
+#courses .con {
+  width: 17%;
+  margin: auto;
+  margin-top: 33px;
+}
+
+#blog {
+  margin-bottom: 30px;
+}
+#blog .words {
+  text-align: center;
+}
+
+#testimonial {
+  background-image: url("../images/rectangle 82.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#testimonial .success {
+  padding-top: 50px !important;
+}
+#testimonial .conti {
+  width: 60%;
+  padding-top: 20px;
+}
+
+#instructors {
+  background-color: #E5E5E5;
+}
+#instructors .fin {
+  width: 60%;
+  padding: 90px 20px 0 0;
+}
+#instructors .pix1 {
+  padding: 30px;
+  background-image: url("../images/mask group (7).png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 60vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+  border-radius: 5px;
+  padding-top: 250px;
+  box-shadow: 0px -60px 10px -10px #038C33 inset;
+}
+#instructors .pix2 {
+  padding: 30px;
+  background-image: url("../images/mask group (8).png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 60vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+  border-radius: 5px;
+  padding-top: 220px;
+}
+#instructors .pix3 {
+  padding: 30px;
+  background-image: url("../images/rectangle 89.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 60vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+  padding-top: 220px;
+}
+#instructors .con {
+  width: 17%;
+  margin: auto;
+  margin-top: 33px;
 }/*# sourceMappingURL=main.css.map */
