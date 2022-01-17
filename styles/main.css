@@ -69,6 +69,25 @@ header .btm-nav img {
 header .btm-nav .lists {
   margin-right: 100px;
 }
+header .btm-nav #custom-nav-container {
+  width: 100%;
+}
+header .btm-nav #custom-nav-container .one {
+  flex: 0.1;
+}
+@media (min-width: 1200px) {
+  header .btm-nav #custom-nav-container #custom-navbar-nav {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
+  }
+}
+header .btm-nav #custom-mynavbar {
+  display: flex;
+  flex: 0.9;
+  justify-content: center;
+  align-items: center;
+}
 header .button {
   background-color: #ADD9BD !important;
   margin-left: 15px;
@@ -90,7 +109,7 @@ header .head-area {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  width: 1347.5px;
+  width: 100%;
   height: 568px;
   left: 0px;
   margin-top: 80px;
@@ -189,8 +208,8 @@ header .head-area .null {
   position: relative;
   left: 0px;
 }
-#courses .card img {
-  width: 200px;
+#courses .eclipse img {
+  width: 200px !important;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -259,8 +278,8 @@ header .head-area .null {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 350px;
-  height: 60vh;
+  width: 30%;
+  height: 60%;
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 30px;
@@ -274,8 +293,8 @@ header .head-area .null {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 350px;
-  height: 60vh;
+  width: 30%;
+  height: 60%;
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 30px;
@@ -289,8 +308,8 @@ header .head-area .null {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 350px;
-  height: 60vh;
+  width: 30%;
+  height: 60%;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 5px;
@@ -298,9 +317,9 @@ header .head-area .null {
   box-shadow: 0px -40px 80px 0px #038C33 inset;
 }
 #instructors .con {
-  width: 17%;
-  margin: auto;
   margin-top: 33px;
+  display: grid;
+  place-items: center;
 }
 
 #contact {
@@ -315,12 +334,15 @@ header .head-area .null {
   resize: vertical;
 }
 #contact .con {
+  margin-top: 33px;
+  display: grid;
+  place-items: center;
   margin-bottom: 50px;
 }
 
 #footer {
   background-color: #003412;
-  height: 82vh;
+  height: 75vh;
 }
 #footer .foot {
   padding-top: 65px;
@@ -349,7 +371,4 @@ header .head-area .null {
 #footer .foot .third,
 #footer .foot .fourth {
   padding-top: 40px;
-}
-#footer .copy i {
-  color: pink !important;
 }/*# sourceMappingURL=main.css.map */
